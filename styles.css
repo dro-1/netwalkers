@@ -1,1 +1,586 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  font-size: 10px;
+}
+
+a,
+input,
+button,
+textarea {
+  font-family: Poppins;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.container > aside {
+  padding: 2rem 0;
+  width: 230px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  min-height: 100vh;
+}
+
+.container > aside header {
+  padding: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px #ccc;
+}
+
+.container > aside header img {
+  width: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.container > aside header h1 {
+  font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+}
+
+.container > aside > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background: #ff4000;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff4000),
+    to(#ff001a)
+  );
+  background: linear-gradient(90deg, #ff4000 0%, #ff001a 100%);
+  padding: 10px;
+  margin-left: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 180px;
+  border-radius: 5px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.container > aside > button > img {
+  width: 20px;
+}
+
+.container > aside > button > img:last-child {
+  margin-right: 0;
+  width: 15px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.container > aside > button p {
+  font-size: 1rem;
+  font-family: Poppins;
+  color: #fff;
+}
+
+.container > aside > ul {
+  list-style-type: none;
+}
+
+.container > aside > ul > li {
+  margin: 1rem 0;
+}
+
+.container > aside > ul > li a {
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.container > aside > ul > li a > img {
+  width: 20px;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.container > aside > ul > li a p {
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+  position: relative;
+  top: -2px;
+  width: 92px;
+}
+
+.container > aside > ul > li a button {
+  background: transparent;
+  border: none;
+  width: 1rem;
+  display: inline-block;
+}
+
+.container > aside > ul > li a button img {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+.container > aside > ul > li div.extra {
+  display: none;
+}
+
+.container > aside > ul > li.dropdown.open > a {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.container > aside > ul > li.dropdown.open > a button img {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.container > aside > ul > li.dropdown.open div.extra {
+  width: 200px;
+  background: #eee;
+  display: block;
+  padding: 1rem;
+}
+
+.container > aside > ul > li.dropdown.open div.extra ul {
+  list-style-type: none;
+}
+
+.container > aside > ul > li.dropdown.open div.extra ul li {
+  margin: 0.5rem 0;
+}
+
+.container > aside > ul > li.dropdown.open div.extra ul li a {
+  font-size: 0.9rem;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background: #eee;
+}
+
+main > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: solid 1px #ccc;
+}
+
+main > header > button {
+  width: 40px;
+  border: none;
+  border-right: solid 1px #ccc;
+  background: transparent;
+  padding: 22px 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main > header > button img {
+  width: 20px;
+}
+
+main > header div.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+main > header div.search img {
+  width: 20px;
+  margin: 0 20px;
+}
+
+main > header div.search input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+main > header div.search input:focus {
+  outline: none;
+}
+
+main > header div.end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: solid 1px #ccc;
+  padding: 1rem;
+}
+
+main > header div.end button {
+  border: none;
+  background: transparent;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main > header div.end button img {
+  width: 15px;
+}
+
+main > header div.end button.pending {
+  position: relative;
+}
+
+main > header div.end button.pending::before {
+  content: "";
+  position: absolute;
+  background: red;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  top: 0;
+  right: 15px;
+}
+
+main > header div.end div.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 180px;
+  font-size: 0.8rem;
+}
+
+main > header div.end div.profile > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+main > header div.end div.profile button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  width: 15px;
+}
+
+main > header div.end div.profile button img {
+  width: 15px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+main > header div.end div.profile div.extra {
+  display: none;
+}
+
+main > header div.end div.profile.open {
+  position: relative;
+}
+
+main > header div.end div.profile.open button img {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+main > header div.end div.profile.open div.extra {
+  display: block;
+  position: absolute;
+  width: 108%;
+  top: 100%;
+  left: 0;
+  background: #fff;
+}
+
+main > header div.end div.profile.open div.extra ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+main > header div.end div.profile.open div.extra ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+main > header div.end div.profile.open div.extra ul li div.image {
+  border: solid 1px #ccc;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+main > header div.end div.profile.open div.extra ul li div.image img {
+  width: 20px;
+}
+
+main > header div.end div.profile.open div.extra button {
+  width: 100%;
+  padding: 10px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff4000),
+    to(#ff001a)
+  );
+  background: linear-gradient(90deg, #ff4000 0%, #ff001a 100%);
+}
+
+main > header div.end div.profile.open div.extra button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+main > div.dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+main > div.dashboard aside {
+  background: #fff;
+  height: 530px;
+  padding: 1.5rem 0;
+  border-radius: 5px;
+}
+
+main > div.dashboard aside div.top {
+  border-bottom: solid 1px #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 5px;
+  padding: 0 1.5rem;
+}
+
+main > div.dashboard aside div.top img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+main > div.dashboard aside div.top p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+main > div.dashboard aside div.buttons {
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+}
+
+main > div.dashboard aside div.buttons button {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+main > div.dashboard aside div.buttons button:first-child {
+  border: none;
+  color: #fff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff4000),
+    to(#ff001a)
+  );
+  background: linear-gradient(90deg, #ff4000 0%, #ff001a 100%);
+}
+
+main > div.dashboard aside div.buttons button:last-child {
+  background: transparent;
+  border: none;
+  border: solid 1px #ff4000;
+}
+
+main > div.dashboard aside div.details {
+  margin-top: 1rem;
+}
+
+main > div.dashboard aside div.details ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 23px;
+}
+
+main > div.dashboard aside div.details ul li p {
+  width: 50%;
+  font-size: 0.9rem;
+}
+
+main > div.dashboard aside div.details ul li:nth-child(odd) {
+  background: rgba(255, 64, 0, 0.1);
+}
+
+main > div.dashboard > div.main {
+  background: #fff;
+  width: 77%;
+  height: 530px;
+  border-radius: 5px;
+}
+
+main > div.dashboard > div.main > p {
+  font-size: 1rem;
+  padding: 1rem;
+  border-bottom: solid 2px #ddd;
+}
+
+main > div.dashboard > div.main div.tabBtns {
+  font-size: 1rem;
+  padding: 1rem;
+  border-bottom: solid 2px #ddd;
+}
+
+main > div.dashboard > div.main div.tabBtns button {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff4000),
+    to(#ff001a)
+  );
+  background: linear-gradient(90deg, #ff4000 0%, #ff001a 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+main > div.dashboard > div.main div.tabBtns button.active {
+  position: relative;
+}
+
+main > div.dashboard > div.main div.tabBtns button.active::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  bottom: -8px;
+  left: 20px;
+  border-top: solid 8px #ff4000;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+}
+
+main > div.dashboard > div.main div.details {
+  padding: 0 1.5rem;
+}
+
+main > div.dashboard > div.main div.details ul {
+  list-style-type: none;
+}
+
+main > div.dashboard > div.main div.details ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+main > div.dashboard > div.main div.details ul li:nth-child(even) {
+  background: rgba(255, 64, 0, 0.1);
+}
